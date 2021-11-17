@@ -1,14 +1,9 @@
-# **Three Door's**
+# **Three Doors**
 
 ## **Problem Statement**
 
 
- A game show has the following setup: there are 3 doors, say A, B, and, C. Behind one  
-  random door is a prize, and behind the other two doors, there is nothing.  
- The game participant is asked to select a door first. After that, the game host opens  
- one among the other two doors  (that the participant has not selected) behind which is empty.  
- Now the participant is offered the choice to switch (between the door that has been selected  
- and the one that the host has not opened). If you are the participant, would you switch or not?  
+A game show has the following setup: there are 3 doors, say A, B, and, C. Behind one random door is a prize, and behind the other two doors, there is nothing. The game participant is asked to select a door first. After that, the game host opens one among the other two doors  (that the participant has not selected) behind which is empty. Now the participant is offered the choice to switch (between the door that has been selected and the one that the host has not opened). If you are the participant, would you switch or not? 
 
 
 ```R
