@@ -1,0 +1,52 @@
+\documentclass[12pt,addpoints,answers]{exam}
+\usepackage{mystyle}
+\usepackage[margin=0.4cm, landscape, b4paper]{geometry}
+\begin{document}
+\pagestyle{headandfoot}
+\begin{center}
+\mylogo
+\end{center}
+\begin{questions}
+\question 
+\begin{center}
+\renewcommand{\arraystretch}{1.8}
+\begin{tabular}{|p{0.6\textwidth}|M{0.2\textwidth}|}
+\hline
+\centering \textbf{Setup}& \textbf{Formula}\\
+\hline
+\# of ways to select (\emph{without replacement}) and arrange (\emph{order matters}) ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects}& \\
+\# of ways to distribute ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects} into ${{\mathcolor{red}n}}$ \textcolor{red}{distinct bins} with one object per bin& \multirow{ -2}{*}{${{\mathcolor{red}{n}}!}$}\\
+\hline
+\# of ways to select (\emph{without replacement, order doesn't matter}) ${{\mathcolor{red}r}}$ \textcolor{red}{objects} out of ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects}&  \\
+\# of ways to arrange ${{\mathcolor{red}n}}$ \textcolor{red}{objects} when one object repeats ${{\mathcolor{red}r}}$ times and the other ${{\mathcolor{red}n}}-{{\mathcolor{red}r}}$ times & \\
+\# of ways to divide ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects} into \textcolor{red}{two unlabeled groups of unequal sizes} ${{\mathcolor{red}r}}$ and ${{\mathcolor{red}n}}-{{\mathcolor{red}r}}$&\multirow{-3}{*}{$\dbinom{{\mathcolor{red}{n}}}{{\mathcolor{red}{r}}}$}  \\
+\# of ways to divide ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects} into \textcolor{red}{two labeled groups of specific sizes} ${{\mathcolor{red}r}}$ and ${{\mathcolor{red}n}}-{{\mathcolor{red}r}}$&
+\\
+\hline
+\# of ways to select (\emph{without replacement}) and arrange (\emph{order matters}) ${{\mathcolor{red}r}}$ \textcolor{red}{objects} out of ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects}&\\
+\# of ways to distribute ${{\mathcolor{red}r}}$ \textcolor{red}{distinct objects} into ${{\mathcolor{red}n}}$ \textcolor{red}{distinct bins} with at most one object per bin& \multirow{ -2}{*}{${\mathcolor{red}{r}}!\dbinom{{\mathcolor{red}{n}}}{{\mathcolor{red}{r}}}$}\\
+\hline
+ \# of ways to select (\emph{with replacement}) and arrange (\emph{order matters}) ${{\mathcolor{red}r}}$ \textcolor{red}{objects} out of ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects}&\\
+\# of ways to distribute ${{\mathcolor{red}r}}$ \textcolor{red}{distinct objects} into ${{\mathcolor{red}n}}$ \textcolor{red}{distinct bins}& \multirow{ -2}{*}{${{\mathcolor{red}{n}}^{\mathcolor{red}{r}}}$} \\
+\hline
+\# of ways to arrange ${{\mathcolor{red}n}}$ \textcolor{red}{objects} with ${{\mathcolor{red}{r_1}}},{{\mathcolor{red}{r_2}}},\ldots,{{\mathcolor{red}{r_k}}}$ repetitions, where \mbox{${{\mathcolor{red}n}} =  {{\mathcolor{red}{r_1}}}+{{\mathcolor{red}{r_2}}}+\cdots+{{\mathcolor{red}{r_k}}}$}  & \\
+\# of ways to divide ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects} into ${{\mathcolor{red}k}}$ \textcolor{red}{unlabeled groups of unequal sizes} ${{\mathcolor{red}{r_1}}},{{\mathcolor{red}{r_2}}},\ldots,{{\mathcolor{red}{r_k}}}$, where ${{\mathcolor{red}n}} =  {{\mathcolor{red}{r_1}}}+{{\mathcolor{red}{r_2}}}+\cdots+{{\mathcolor{red}{r_k}}}$& \multirow{-2}{*}{$\dfrac{{\mathcolor{red}{n}!}}{{\mathcolor{red}{{r_1}}!}{\mathcolor{red}{{r_2}}!}\cdots{\mathcolor{red}{{r_k}}!}}$}  \\
+\# of ways to divide ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects} into ${{\mathcolor{red}k}}$ \textcolor{red}{labeled groups of specific sizes} ${{\mathcolor{red}{r_1}}},{{\mathcolor{red}{r_2}}},\ldots,{{\mathcolor{red}{r_k}}}$, where ${{\mathcolor{red}n}} =  {{\mathcolor{red}{r_1}}}+{{\mathcolor{red}{r_2}}}+\cdots+{{\mathcolor{red}{r_k}}}$ & \\
+\hline
+\# of ways to divide ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects} into ${{\mathcolor{red}k}}$ \textcolor{red}{unlabeled groups with some of equal sizes}, say $\underbrace{{{\mathcolor{red}{r_1}}}={{\mathcolor{red}{r_2}}}}_{\textcolor{red}{\text{2 groups}}},$ $\underbrace{{{\mathcolor{red}{r_3}}}={{\mathcolor{red}{r_4}}}={{\mathcolor{red}{r_5}}}}_{\textcolor{red}{\text{3 groups}}},$ and ${{\mathcolor{red}{r_6}}},\ldots,{{\mathcolor{red}{r_k}}}$ are different such that ${{\mathcolor{red}n}} =  {{\mathcolor{red}{r_1}}}+{{\mathcolor{red}{r_2}}}+\cdots+{{\mathcolor{red}{r_k}}}$ & \multirow{2}{*}{$\left(\dfrac{1}{{\mathcolor{red}{2}!{\mathcolor{red}{3}!}}}\right)\left(\dfrac{{\mathcolor{red}{n}!}}{{\mathcolor{red}{{r_1}}!}{\mathcolor{red}{{r_2}}!}\cdots{\mathcolor{red}{{r_k}}!}}\right)$ } \\
+\hline
+\# of ways to select ${{\mathcolor{red}r}}$ \textcolor{red}{objects} (\emph{with replacement, order doesn't matter}) out of ${{\mathcolor{red}n}}$ \textcolor{red}{distinct objects}  & \\
+\# of ways to distribute ${{\mathcolor{red}r}}$ \textcolor{red}{identical objects} into ${{\mathcolor{red}n}}$ \textcolor{red}{distinct bins}  &  \\
+\# of non-negative integer solutions to the equation $x_1+x_2+\cdots+x_{{\mathcolor{red}n}} = {{\mathcolor{red}r}}$ & \multirow{-3}{*}{$\dbinom{{\mathcolor{red}{n}}+\mathcolor{red}{r}-1}{{\mathcolor{red}{r}}}$}\\
+\hline
+\# of ways to distribute ${{\mathcolor{red}r}}$ \textcolor{red}{identical objects} into ${{\mathcolor{red}n}}$ \textcolor{red}{distinct bins} such that no bin is empty &\\
+\# of positive integer solutions to the equation $x_1+x_2+\cdots+x_{{\mathcolor{red}n}} = {{\mathcolor{red}r}}$ &  \multirow{-2}{*}{$\dbinom{\mathcolor{red}{r}-1}{\mathcolor{red}{n}-1}$}\\
+\hline
+\end {tabular}
+\end{center}
+\end{questions}
+\label{totalpag}
+\end{document}
+
+
+ 

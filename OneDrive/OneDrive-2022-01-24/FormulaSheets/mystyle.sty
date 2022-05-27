@@ -1,0 +1,80 @@
+% Style file b
+
+%Page Setup
+%\oddsidemargin 0in \evensidemargin 0in
+%\topmargin -0.5in \headheight 0.25in \headsep 0.25in
+%\textwidth 6.5in \textheight 9in %\marginparsep 0pt \marginparwidth 0pt
+\parskip 0ex \parindent 0ex \footskip 20pt
+
+% Font Definitions
+\newfont{\bssten}{cmssbx10}
+\newfont{\bssnine}{cmssbx14 scaled 1200}
+\newfont{\bssdoz}{cmssbx14 scaled 1600}
+
+
+% Include Packages
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{pbox}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{xhfill}
+\usepackage{marvosym}
+\usepackage{fancybox}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{array}
+\usepackage{xcolor}
+
+\pagestyle{headandfoot}
+\runningheader{MCL 601}{Counting Formula Sheet, Page \thepage\ of \numpages}
+{\today}
+\runningheadrule
+\firstpagefooter{Sudarsan N.S.~Acharya}{}{sudarsan.acharya\MVAt manipal.edu}
+\firstpagefootrule
+\runningfooter{Sudarsan N.S.~Acharya}{}{sudarsan.acharya\MVAt manipal.edu}
+\runningfootrule
+
+% Document Title
+\def\ni{\noindent }
+\def\mylogo{
+\thispagestyle{empty}
+\ovalbox{
+\begin{minipage}[t]{0.25\linewidth}
+  {\bssnine MCL 601
+	
+\vspace{1mm}
+Applied Probability \& Statistics
+
+\vspace{1mm}
+\noindent \bssnine Odd Semester 2021}
+\end{minipage}
+}
+\hfill
+\begin{minipage}[t]{0.3\linewidth}
+\vspace*{-4pt}
+\raggedleft \includegraphics[scale=2.1]{MSISLogo.png}
+\end{minipage}
+\smallskip
+\begin{center} 
+{\bssdoz  Counting Formula Sheet}
+\end{center}
+\vspace*{-12pt}
+\xhrulefill{black}{2pt}
+\bigskip
+}
+
+\makeatletter
+\def\mathcolor#1#{\@mathcolor{#1}}
+\def\@mathcolor#1#2#3{%
+  \protect\leavevmode
+  \begingroup
+    \color#1{#2}#3%
+  \endgroup
+}
+\makeatother
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+

@@ -1,0 +1,81 @@
+% Style file b
+
+%Page Setup
+\oddsidemargin 0in \evensidemargin 0in
+\topmargin -0.5in \headheight 0.25in \headsep 0.25in
+\textwidth 6.5in \textheight 9in %\marginparsep 0pt \marginparwidth 0pt
+\parskip 0ex \parindent 0ex \footskip 20pt
+
+% Font Definitions
+\newfont{\bssten}{cmssbx10}
+\newfont{\bssnine}{cmssbx14 scaled 600}
+\newfont{\bssdoz}{cmssbx14 scaled 1200}
+
+
+% Include Packages
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{pbox}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{xhfill}
+\usepackage{marvosym}
+\usepackage{fancybox}
+\usepackage{diagbox}
+
+\pagestyle{headandfoot}
+\runningheader{MCL 601}{Problem Set-1, Page \thepage\ of \numpages}
+{\today}
+\runningheadrule
+\firstpagefooter{Sudarsan N.S.~Acharya}{}{sudarsan.acharya\MVAt manipal.edu}
+\firstpagefootrule
+\runningfooter{Sudarsan N.S.~Acharya}{}{sudarsan.acharya\MVAt manipal.edu}
+\runningfootrule
+
+% Document Title
+\def\ni{\noindent }
+\def\mylogo{
+\thispagestyle{empty}
+\ovalbox{
+\begin{minipage}[t]{0.13\linewidth}
+  {\bssnine MCL 601
+	
+\vspace{1mm}
+Applied Probability \& Statistics
+
+\vspace{1mm}
+\noindent \bssnine Odd Semester 2021}
+\end{minipage}
+}
+\hfill
+\begin{minipage}[t]{0.3\linewidth}
+\vspace*{-4pt}
+\raggedleft \includegraphics[scale=2.1]{MSISLogo.png}
+\end{minipage}
+\smallskip
+\begin{center} 
+{\bssdoz Problem Set 1 --- \today}
+\end{center}
+\vspace*{-12pt}
+\xhrulefill{black}{2pt}
+\bigskip
+}
+
+% Commands for table cell adjustment %
+%------------------------------------%
+\newcommand\T{\rule{0pt}{2.6ex}}
+\newcommand\B{\rule[-1.2ex]{0pt}{0pt}}
+\newcommand\M{\rule{0pt}{2.8ex}}
+\newcommand\N{\rule[-1.4ex]{0pt}{0pt}}
+
+%Augmented Matrix%
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\allowdisplaybreaks
+
